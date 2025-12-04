@@ -1,0 +1,4 @@
+INSERT INTO `student_details`(`id`, `name`, `age`, `department`, `grade`) VALUES ('201','john','20','cse','80') , ('202','jack','21','cse','60'), ('203','sparrow','20','cse','75'), ('204','don','22','cse','80')
+SELECT * FROM `student_details` WHERE age='20'
+SELECT * FROM `student_details` WHERE department='cse'
+SELECT * FROM `student_details` WHERE grade='80
