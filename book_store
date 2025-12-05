@@ -1,0 +1,17 @@
+INSERT INTO books (Id, Title, Author, Price, Stock_Available, Genre) 
+VALUES (1, 'The Alchemist', 'Paulo Coelho', 350, 'In Stock', 'Fiction'),
+(2, 'Atomic Habits', 'James Clear', 550, 'In Stock', 'Self-Help'),
+(3, 'The Power of Your Subconscious Mind', 'Joseph Murphy', 299, 'In Stock', 'Self-Help'),
+(4, 'Ikigai', 'Héctor García', 450, 'Out of Stock', 'Philosophy'),
+(5, 'Rich Dad Poor Dad', 'Robert Kiyosaki', 399, 'In Stock', 'Finance'),
+(6, 'Wings of Fire', 'A.P.J. Abdul Kalam', 280, 'Out of Stock', 'Biography'),
+
+SELECT DISTINCT Genre FROM `bookstore`;
+
+SELECT * FROM `bookstore` WHERE stock_status='In Stock' AND price<400;
+
+SELECT * FROM `bookstore` WHERE stock_status='Out of Stock' OR price>700;
+
+SELECT title,price,price*1.10 AS price_with_GST FROM `bookstore`;
+
+SELECT title,price,stock_status FROM `bookstore` ORDER BY price DESC;
