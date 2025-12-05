@@ -1,0 +1,7 @@
+INSERT INTO online_store (id, name, category, price, in_stock) VALUES(201,'shirt','cotton',599,'yes'), (202,'jeans','semi cotton',999,'yes'), (203,'crocs','chappals',5000,'no'), (204,'berkenstock','chappals',7490,'yes'), (205,'monkey cap','cap',170,'no')
+
+SELECT DISTINCT Category FROM `online_store`
+SELECT * FROM `online_store` WHERE in_stock='yes'AND price<500;
+SELECT * FROM `online_store` WHERE in_stock='no'AND price>1000;
+​SELECT name,price FROM `online_store` ORDER BY price DESC;
+SELECT Name,Price,Price*1.18 AS Price_with_tax FROM `online_store`;
